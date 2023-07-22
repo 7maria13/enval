@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <img src="Enval_logo.png" alt=""> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css"
+    integrity="sha512-9YHSK59/rjvhtDcY/b+4rdnl0V4LPDWdkKceBl8ZLF5TB6745ml1AfluEU6dFWqwDw9lPvnauxFgpKvJqp7jiQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="enval.css">
+
+  <title>Document</title>
+</head>
+<body class="bg">
+  <div class="container-fluid">
+    <div class="row flex-nowrap">
+      <div class="ci col-auto col-md-1 col-xl-2 px-sm-2 px-0 bg-white">
+        <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 vh-100 text-white ">
+          <div class="h-50 ">
+            <img class="d-none d-lg-inline w-100" src="../logo.png/images.png" alt="">
+            <ul class="nav nav-pills flex-column mb-md-auto mb-0 align-items-center align-items-md-start" id="menu">
+              <li >
+                <a href="Dashboard.html" class="nav-link text-dark align-middle px-0">
+                  <i class="d1 bi bi-grid"></i> <span class="d1 ms-1 d-none d-lg-inline">Dashboard</span>
+                </a>
+              </li>
+              <li>
+                <a href="facture.html" data-bs-toggle="collapse" class="nav-link text-dark px-0 align-middle">
+                  <i class="d1 bi bi-person-circle"></i> <span class="d1 ms-1 d-none d-lg-inline">Facture</span> </a>
+                <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                </ul>
+               </li>
+              <li >
+                <a href="command.html" class="nav-link text-dark px-0 align-middle">
+                  <i class="d1 bi bi-car-front-fill"></i> <span class="d1 ms-1 d-none d-lg-inline">Commande</span></a>
+              </li>
+              <li class="nav-item1" >
+                <a href="suivi.html" data-bs-toggle="collapse" class="nav-link text-dark px-0 align-middle ">
+                  <i class="d1 bi bi-bag"></i> <span class="d1 ms-1 d-none d-lg-inline">Suivi</span></a>
+                <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
+                </ul>
+              </li>
+              <li >
+                <a href="serviceclient.html" class="nav-link text-dark px-0 align-middle">
+                  <i class="d1 bi bi-chat-left-text"></i> <span class="d1 ms-1 d-none d-lg-inline">service client</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="h-50 d-flex flex-column justify-content-end">
+            <a href="#" class=" nav-link text-dark px-0 align-middle">
+              <i class="d1 bi bi-gear"></i>
+              <span class="d1 d-none d-lg-inline ms-1 ">paramètre</span>
+            </a>
+            <a href="index.html" class="nav-link text-dark px-0 align-middle">
+              <i class="d1 bi bi-box-arrow-left"></i>
+              <span class="d1 d-none d-lg-inline mx-1">Déconexion</span>
+            </a>
+          </div>
+          </div>
+      </div>
+      <div class="ctn container-fluid col-md-11 col-xl-10">
+        <!-- nav bar -->
+        <div class="nav0 container-fluid">
+
+          <div class="nav1 container-fluid">
+            <svg class="nav3" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bell"
+              viewBox="0 0 16 16">
+              <path
+                d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
+            </svg>
+            <svg class="nav2" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bootstrap-fill"
+              viewBox="0 0 16 16">
+              <path
+                d="M6.375 7.125V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375v2.725z" />
+              <path
+                d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4h-8zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396H5.062z" />
+            </svg>
+           </div>
+          </nav>
+        </div>
+        <h5 class="r1">Rapport: R-TE202303001</h5>
+        <div class="r2 pb-4 container-fluid id="Contenu">
+          <div class="me-5 w-100"> <img src="logo.png/lubrifiant.png" alt=""> </div>
+          <H5 class="r3">Rapport d'analyse (Moteur) </H5>
+          <div class="table-responsive">
+            <table class="table-border w-100 mt-1">
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody class="table" style="border:1px solid;">
+                <tr style="background-color: #E7F9FD;">
+                  <th scope="row"> Information client</th>
+                  <td colspan="8"></td>
+                </tr>
+                <tr>
+                  <th colspan="2" scope="row">Nom du client</th>
+                  <td colspan="2">BOLUDA</td>
+                  <th colspan="2" scope="row">Site de travail:</th>
+                  <td colspan="2">ABIDJAN</td>
+                </tr>
+                <tr>
+                  <th colspan="2" scope="row">Nom du navire</th>
+                  <td colspan="2">V8 SUPEROZA</td>
+                  <th colspan="2" scope="row">Compartiment:</th>
+                  <td colspan="2">MOOTEUR PRINCIPAL BABORD</td>
+                </tr>
+                <tr>
+                  <th colspan="2" scope="row">Marque</th>
+                  <td colspan="2">CATERPILLAR</td>
+                  <th colspan="2" scope="row">Marque huile:</th>
+                  <td colspan="2">PREMIUM</td>
+                </tr>
+                <tr>
+                  <th colspan="2" scope="row">Numero de serie</th>
+                  <td colspan="2"></td>
+                  <th colspan="2" scope="row">Grade huile:</th>
+                  <td colspan="2">20W50</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="table-responsive">
+            <table class="table-border w-100  mt-1">
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody class="table-group-divider " style="border:1px solid;">
+                <tr class="bg">
+                  <th colspan="8" scope="row"> Information échantillon</th>
+                  <td ></td>
+                </tr>
+                <tr>
+                  <th scope="row" colspan="3">Code échantillon</th>
+                  <td></td>
+                  <td></td>
+                  <td class="border-start" style="text-align: center;width: 10%;">06-269-0030</td>
+                  <td class="border-start" style="text-align: center; width: 10%;">06-196-0014</td>
+                  <td class="border-start" style="text-align: center; width: 10%;">06-115-0016</td>
+                  <td class="border-start" style="text-align: center; width: 10%;">05-316-0020</td>
+                </tr>
+                <tr>
+                  <th scope="row" colspan="3">Date de prélèvement</th>
+                  <td></td>
+                  <td></td>
+                  <td class="border-start" style="text-align: center;">01/09/2022</td>
+                  <td class="border-start" style="text-align: center;">11/07/2022</td>
+                  <td class="border-start" style="text-align: center;">15/04/2022</td>
+                  <td class="border-start" style="text-align: center;">18/11/2021</td>
+                </tr>
+                <tr>
+                  <th scope="row" colspan="3">Date d'analyse:</th>
+                  <td></td>
+                  <td></td>
+                  <td class="border-start w-15" style="text-align: center;">28/09/2022</td>
+                  <td class="border-start" style="text-align: center;">21/07/2022</td>
+                  <td class="border-start" style="text-align: center;">25/04/2022</td>
+                  <td class="border-start" style="text-align: center;">18/11/2021</td>
+                </tr>
+                <tr>
+                  <th scope="row" colspan="3">Compte horaire H:</th>
+                  <td></td>
+                  <td></td>
+                  <td class="border-start" style="text-align: center;">-</td>
+                  <td class="border-start" style="text-align: center;">-</td>
+                  <td class="border-start" style="text-align: center;">-</td>
+                  <td class="border-start" style="text-align: center;">-</td>
+                </tr>
+                <tr>
+                  <th scope="row" colspan="3">Age huile H:</th>
+                  <td></td>
+                  <td></td>
+                  <td class="border-start" style="text-align: center;">-</td>
+                  <td class="border-start" style="text-align: center;">-</td>
+                  <td class="border-start" style="text-align: center;">-</td>
+                  <td class="border-start" style="text-align: center;">-</td>
+                </tr>
+                <tr>
+                  <th scope="row" colspan="3">Vidange:</th>
+                  <td></td>
+                  <td></td>
+                  <td class="border-start" style="text-align: center;">-</td>
+                  <td class="border-start" style="text-align: center;">-</td>
+                  <td class="border-start" style="text-align: center;">-</td>
+                  <td class="border-start" style="text-align: center;">-</td>
+                </tr>
+                <tr>
+                  <th scope="row" colspan="3">Appoint:</th>
+                  <td></td>
+                  <td></td>
+                  <td class="border-start" style="text-align: center;">40</td>
+                  <td class="border-start" style="text-align: center;">29</td>
+                  <td class="border-start" style="text-align: center;">35.5</td>
+                  <td class="border-start" style="text-align: center;">127</td>
+                </tr>
+                <tr>
+                  <th scope="row" colspan="3">Filtre changé:</th>
+                  <td></td>
+                  <td></td>
+                  <td class="border-start" style="text-align: center;">-</td>
+                  <td class="border-start" style="text-align: center;">-</td>
+                  <td class="border-start" style="text-align: center;">-</td>
+                  <td class="border-start" style="text-align: center;">-</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="table-responsive">
+            <table class="border mt-1 w-100 table-bordered">
+              <!-- <thead>
+                <tr> <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                </tr> 
+                  </thead> -->
+              <tbody>
+                  <tr style="background-color: #E7F9FD;border: 1px solid;">
+                  <th scope="row" style="border: none;">Paramètres</th>
+                  <td class="border-start-0" style="text-align: center;border: none; ">Méthodes</td>
+                  <td class="border-start-0" style="text-align: center;">Unités</td>
+                  <td class="border-end" style="text-align: center;">Limites</td>
+                  <td colspan="5" style="text-align: center;">Résultats</td>
+                </tr>
+                <tr style="background-color: darkgray; border: 1px solid; ">
+                  <th colspan="8">Metals/Wear/Contaminants/Additivites</th>
+  
+                </tr>
+                <tr>
+                  <td style="border:none;">Aluminium</td>
+                  <td class="border-start-0" style="text-align: center; border: none; ">ASTM D5185</td>
+                  <td class="border-start-0" style="text-align: center; width: 10%;">ppm</td>
+                  <td style="text-align:center; width: 10%;">
+                    <8 /16 </td>
+                      <td style="text-align: center; width: 10%;">1</td>
+                      <td style="text-align: center; width: 10%;">1,6</td>
+                  <td style="text-align: center; width: 10%;">0</td>
+                  <td style="text-align: center; width: 10%;">1.32</td>
+                </tr>
+                <tr>
+                  <td style="border: none;">Chrome</td>
+                  <td class="border-start-0" style="text-align: center; border: none;">ASTM D5185</td>
+                  <td class="border-start-0" style="text-align: center;">ppm</td>
+                  <td style="text-align: center;">
+                    <5 /25< </td>
+                  <td style="text-align: center;">0.2</td>
+                  <td style="text-align: center;">0</td>
+                  <td style="text-align: center;">0</td>
+                  <td style="text-align: center;">0.22</td>
+                </tr>
+                <tr>
+                  <td style="border: none;">Cuivre</td>
+                  <td class="border-start-0" style="text-align: center; border: none;">ASTM D5185</td>
+                  <td class="border-start-0" style="text-align: center;">ppm</td>
+                  <td style="text-align: center;">
+                    <15 /45< </td>
+                  <td style="text-align: center; background-color: crimson;">178</td>
+                  <td style="text-align: center; background-color: crimson;"> 204</td>
+                  <td style="text-align: center; background-color: crimson;"> 141</td>
+                  <td style="text-align: center; background-color: crimson;"> 288</td>
+                </tr>
+                <tr>
+                  <td style="border: none;">Etain</td>
+                  <td class="border-start-0" style="text-align: center; border: none;">ASTM D5185</td>
+                  <td class="border-start-0" style="text-align: center;">ppm</td>
+                  <td style="text-align: center;">
+                    <15 /30< </td>
+                  <td style="text-align: center;">0</td>
+                  <td style="text-align: center;">0</td>
+                  <td style="text-align: center;">0</td>
+                  <td style="text-align: center;">0.28</td>
+                </tr>
+                <tr>
+                  <td style="border: none;">Fer</td>
+                  <td class="border-start-0" style="text-align: center; border: none;">ASTM D5185</td>
+                  <td class="border-start-0" style="text-align: center;">ppm</td>
+                  <td style="text-align: center;">
+                    <45 /95< </td>
+                  <td style="text-align: center;">12.6</td>
+                  <td style="text-align: center;">13</td>
+                  <td style="text-align: center;">5.43</td>
+                  <td style="text-align: center;">10.2</td>
+                </tr>
+                <tr>
+                  <td style="border: none;">Nickel</td>
+                  <td class="border-start-0" style="text-align: center; border: none;">ASTM D5185</td>
+                  <td class="border-start-0" style="text-align: center;">ppm</td>
+                  <td style="text-align: center;">
+                    <5 /15< </td>
+                  <td style="text-align: center;">1.2</td>
+                  <td style="text-align: center;">1</td>
+                  <td style="text-align: center;">0</td>
+                  <td style="text-align: center;">0</td>
+                </tr>
+                <tr>
+                  <td style="border: none;">Chrome</td>
+                  <td class="border-start-0" style="text-align: center; border: none;">ASTM D5185</td>
+                  <td class="border-start-0" style="text-align: center;">ppm</td>
+                  <td style="text-align: center;">
+                    <25 /80< </td>
+                  <td style="text-align: center;">0</td>
+                  <td style="text-align: center;">1</td>
+                  <td style="text-align: center;">0.80</td>
+                  <td style="text-align: center;">0.67</td>
+                </tr>
+                <tr>
+                  <td style="border: none;">Silicium</td>
+                  <td class="border-start-0" style="text-align: center; border: none;">ASTM D5185</td>
+                  <td class="border-start-0" style="text-align: center;">ppm</td>
+                  <td style="text-align: center;">
+                    <20 /40< </td>
+                  <td style="text-align: center;">3.58</td>
+                  <td style="text-align: center;">3</td>
+                  <td style="text-align: center;">0</td>
+                  <td style="text-align: center;">2.38</td>
+                </tr>
+                <tr>
+                  <td style="border: none;">Titan</td>
+                  <td class="border-start-0" style="text-align: center; border: none;">ASTM D5185</td>
+                  <td class="border-start-0" style="text-align: center;">ppm</td>
+                  <td style="text-align: center;">
+                    <10 </td>
+                  <td style="text-align: center;">0</td>
+                  <td style="text-align: center;">0</td>
+                  <td style="text-align: center;">0</td>
+                  <td style="text-align: center;">0</td>
+                </tr>
+                <tr>
+                  <td style="border: none;">Vadanium</td>
+                  <td class="border-start-0" style="text-align: center; border: none;">ASTM D5185</td>
+                  <td class="border-start-0" style="text-align: center;">ppm</td>
+                  <td style="text-align: center;">
+                    <5 </td>
+                  <td style="text-align: center;">0</td>
+                  <td style="text-align: center;">0</td>
+                  <td style="text-align: center;">0</td>
+                  <td style="text-align: center;">0</td>
+                </tr>
+                <tr>
+                  <td style="border: none;">Argent</td>
+                  <td class="border-start-0 border-end-0" style="text-align: center; border: none;">ASTM D5185</td>
+                  <td class="border-start-0" style="text-align: center; ">ppm</td>
+                  <td style="text-align: center;">
+                    <10 </td>
+                  <td style="text-align: center;">0</td>
+                  <td style="text-align: center;">0</td>
+                  <td style="text-align: center;">0</td>
+                  <td style="text-align: center;">0</td>
+                </tr>
+                <tr>
+                  <td style="border: none;">Cadmium</td>
+                  <td class="border-start-0" style="text-align: center; border: none;">ASTM D5185</td>
+                  <td class="border-start-0" style="text-align: center;">ppm</td>
+                  <td style="text-align: center;">
+                    <10 </td>
+                  <td style="text-align: center;">0</td>
+                  <td style="text-align: center;">0</td>
+                  <td style="text-align: center;">0</td>
+                  <td style="text-align: center;">0</td>
+                </tr>
+                <tr>
+                  <td style="border: none;">Sodium</td>
+                  <td class="border-start-0" style="text-align: center; border: none;">ASTM D5185</td>
+                  <td class="border-start-0" style="text-align: center;">ppm</td>
+                  <td style="text-align: center;">-</td>
+                  <td style="text-align: center;background-color: darkorange;"></td>
+                  <td style="text-align: center;background-color: darkorange;"></td>
+                  <td style="text-align: center;background-color: darkorange;"></td>
+                  <td style="text-align: center; background-color:crimson;"></td>
+                </tr>
+                <tr>
+                  <td style="border: none;">Calcium</td>
+                  <td class="border-start-0" style="text-align: center; border: none;">ASTM D5185</td>
+                  <td class="border-start-0" style="text-align: center;">ppm</td>
+                  <td style="text-align: center;">-</td>
+                  <td style="text-align: center;">3577</td>
+                  <td style="text-align: center;">2895</td>
+                  <td style="text-align: center;">1158</td>
+                  <td style="text-align: center;">3220</td>
+                </tr>
+                <tr>
+                  <td style="border: none;">Magnesium</td>
+                  <td class="border-start-0" style="text-align: center; border: none;">ASTM D5185</td>
+                  <td class="border-start-0" style="text-align: center;">ppm</td>
+                  <td style="text-align: center;">-</td>
+                  <td style="text-align: center;">16.7</td>
+                  <td style="text-align: center;">18</td>
+                  <td style="text-align: center;">30.4</td>
+                  <td style="text-align: center;">162</td>
+                </tr>
+                <tr>
+                  <td style="border: none;">Phosphore</td>
+                  <td class="border-start-0" style="text-align: center; border: none;">ASTM D5185</td>
+                  <td class="border-start-0" style="text-align: center;">ppm</td>
+                  <td style="text-align: center;">-</td>
+                  <td style="text-align: center;">756</td>
+                  <td style="text-align: center;">713</td>
+                  <td style="text-align: center;">712</td>
+                  <td style="text-align: center;">727</td>
+                </tr>
+                <tr>
+                  <td style="border: none;">Zinc</td>
+                  <td class="border-start-0" style="text-align: center; border: none;">ASTM D5185</td>
+                  <td class="border-start-0" style="text-align: center;">ppm</td>
+                  <td style="text-align: center;">-</td>
+                  <td style="text-align: center;">808</td>
+                  <td style="text-align: center;">588</td>
+                  <td style="text-align: center;">596</td>
+                  <td style="text-align: center;">753</td>
+                </tr>
+                <tr>
+                  <th colspan="8" style="background-color: darkgray; color: black; border: 1px solid;">Oil
+                    Condition/Particule count</th>
+                </tr>
+                <tr>
+                  <td style="border: none;">Viscosité à 100°</td>
+                  <td class="border-start-0" style="text-align: center; border: none;">ASTM D445</td>
+                  <td class="border-start-0" style="text-align: center;"> mm2/s</td>
+                  <td style="text-align: center;">
+                    <12,5 /21< </td>
+                  <td style="text-align: center; background-color: darkorange;">18,2</td>
+                  <td style="text-align: center; background-color: darkorange;">18,1</td>
+                  <td style="text-align: center; background-color: darkorange;">17,6</td>
+                  <td style="text-align: center; background-color: crimson;">20,3</td>
+                </tr>
+                <tr>
+                  <td style="border: none;">TBN</td>
+                  <td class="border-start-0" style="text-align: center; border: none;">ASTM D2896</td>
+                  <td class="border-start-0" style="text-align: center;">mgKOH/g</td>
+                  <td style="text-align: center;"></td>
+                  <td style="text-align: center;">5,69</td>
+                  <td style="text-align: center;">3,21</td>
+                  <td style="text-align: center;">4,47</td>
+                  <td style="text-align: center;">9</td>
+                </tr>
+                <tr>
+                  <td style="border: none;">Point éclair</td>
+                  <td class="border-start-0" style="text-align: center; border: none;">ASTM D3828</td>
+                  <td class="border-start-0" style="text-align: center;">°C</td>
+                  <td style="text-align: center;"> >200 </td>
+                  <td style="text-align: center;">220</td>
+                  <td style="text-align: center; background-color: darkorange;">182</td>
+                  <td style="text-align: center;">218</td>
+                  <td style="text-align: center;">220</td>
+                </tr>
+                <tr>
+                  <td style="border: none;">Suie</td>
+                  <td class="border-start-0" style="text-align: center; border: none;">ASTM D2412</td>
+                  <td class="border-start-0" style="text-align: center;">ufn</td>
+                  <td style="text-align: center;">
+                    <60 </td>
+                  <td style="text-align: center;">5,77</td>
+                  <td style="text-align: center;">15,1</td>
+                  <td style="text-align: center;">0</td>
+                  <td style="text-align: center;">16,4</td>
+                </tr>
+                <tr>
+                  <td style="border: none;">Eau</td>
+                  <td class="border-start-0" style="text-align: center; border: none;">Crackle</td>
+                  <td class="border-start-0" style="text-align: center;">%</td>
+                  <td style="text-align: center;"></td>
+                  <td style="text-align: center;">N</td>
+                  <td style="text-align: center;">N</td>
+                  <td style="text-align: center;">N</td>
+                  <td style="text-align: center;">N</td>
+                </tr>
+                <tr>
+                  <td style="border: none;">Dilution</td>
+                  <td class="border-start-0" style="text-align: center; border: none;"></td>
+                  <td class="border-start-0" style="text-align: center;">-</td>
+                  <td style="text-align: center;"></td>
+                  <td style="text-align: center;">N</td>
+                  <td style="text-align: center;">N</td>
+                  <td style="text-align: center;">N</td>
+                  <td style="text-align: center;">N</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class=" d-flex " >
+            <div class="row mt-1 m-0 color"
+              style="height:6rem; width:25%; background-image: linear-gradient(to right, #1abf13, #70b900, #9db100, #c0a800, #dc9e00, #e79100, #f28208, #fb7219, #f65e24, #ef492d, #e63335, #dc143c);">
+              <h1 class="d-flex justify-content-end align-items-center">x</h1>
+            </div>
+            <div class="ms-5">
+              <p class="textt"> <strong> commentaires:</strong> Le taux de cuivre reste trés élevé.Le soduim toujours aussi élevé: à
+                suivre. <br> Verifier ce compartiment et
+                réparer si nécessaire.Voir les causes de presence de soduim dans <br> l'huile.Changer l'huile et le filtre
+                .refaire u prélevement pour controle.</p>
+              <p class="textt">diagnostic établi sous reserve de representativité de l'échantilllon et des information fournies</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

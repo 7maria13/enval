@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css"
+    integrity="sha512-9YHSK59/rjvhtDcY/b+4rdnl0V4LPDWdkKceBl8ZLF5TB6745ml1AfluEU6dFWqwDw9lPvnauxFgpKvJqp7jiQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./enval.css">
+
+<body class="bg">
+  <div class="container-fluid">
+    <div class="row flex-nowrap">
+      <div class="ci col-auto col-lg-3 col-xl-2 px-sm-2 px-0 bg-white">
+        <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+          <img class="d-none d-lg-inline w-100 h-75" src="../logo.png/images.png" alt="">
+          <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+            <li class="nav-item1">
+              <a href="Dashboard.html" class="nav-link text-dark align-middle px-0">
+                <i class="d1 bi bi-grid"></i> <span class="d1  ms-1 d-none d-lg-inline">Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="facture.html" data-bs-toggle="collapse" class="nav-link text-dark px-0 align-middle">
+                <i class="d1 bi bi-person-circle"></i> <span class="d1 ms-1 d-none d-lg-inline">Facture</span> </a>
+              <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+              </ul>
+            </li>
+            <li>
+              <a href="command.html" class="nav-link text-dark px-0 align-middle">
+                <i class="d1 bi bi-car-front-fill"></i> <span class="d1 ms-1 d-none d-lg-inline"> Commande</span></a>
+            </li>
+            <li>
+              <a href="suivi.html" data-bs-toggle="collapse" class="nav-link text-dark px-0 align-middle ">
+                <i class="d1 bi bi-bag"></i> <span class="d1 ms-1 d-none d-lg-inline">Suivi</span></a>
+              <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
+              </ul>
+            </li>
+            <li>
+              <a href="serviceclient.html" class="nav-link text-dark px-0 align-middle">
+                <i class="d1 bi bi-chat-left-text"></i> <span class="d1 ms-1 d-none d-lg-inline">service client</span></a>
+            </li>
+          </ul>
+          <hr>
+          <div class="dropdown pb-4">
+            <a href="#" class=" nav-link text-dark px-0 align-middle">
+              <i class="d1 bi bi-gear"></i>
+              <span class="d1 d-none d-lg-inline ms-1 ">paramètre</span>
+            </a>
+            <a href="index.html" class="nav-link text-dark px-0 align-middle">
+              <i class="d1 bi bi-box-arrow-left"></i>
+              <span class="d1 d-none d-lg-inline mx-1">Déconexion</span>
+            </a>
+             </div>
+          </div>
+      </div>
+        <div class="ctn container col-lg-9 col-xl-10">
+        <!-- nav bar -->
+        <div class="nav0 container-fluid">
+
+          <div class="nav1 container-fluid">
+            <svg class="nav3" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bell"
+              viewBox="0 0 16 16">
+              <path
+                d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
+            </svg>
+            <svg class="nav2" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bootstrap-fill"
+              viewBox="0 0 16 16">
+              <path
+                d="M6.375 7.125V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375v2.725z" />
+              <path
+                d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4h-8zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396H5.062z" />
+            </svg>
+
+          </div>
+          </nav>
+        </div>
+        <!-- nav bar -->
+
+        <!-- contenu -->
+
+        <div class="cont container mt-5">
+          <!-- chart en circulaire -->
+          <div class=" cla2 d-flex " >
+            <div class="row">
+            <div class="col-auto col-md-5 me-2">
+              <h4 class="ANA">Analyse Positives</p>
+                <div class="ana text-center">
+                  <div class="cla1">
+                    <i class="cla bi bi-lightning-charge-fill"></i></div>
+                  <div>
+                  </div>
+                  <h5 class="ANA1"> Positif</h5>
+                  <div>
+                    <canvas id="myChart1"></canvas>
+                    <span id="tu" class="re">
+                      <h3 class="ana1">91%</h3>
+                    </span>
+                  </div>
+                  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                  <script>
+                    const dtx = document.getElementById('myChart1');
+                    new Chart(dtx, {
+                      type: 'doughnut',
+                      data: {
+
+                        datasets: [{
+                          label1: '',
+                          data: [91, 9,],
+                          barThickness: 2,
+                          borderWidth: 1,
+                          backgroundColor: [
+                            '#E7F9FD',
+                            '#4A96A6'
+                          ],
+                          borderColor: [
+                            '#E7F9FD',
+                            '#4A96A6',
+                          ],
+                          borderRaduis: 4,
+                        }]
+                      },
+                      options: {
+                        circumference: 260,
+                        rotation: 230,
+                        cutout: "83%",
+                        aspectRatio: 2,
+                      }
+                    });
+                  </script>
+                </div>
+            </div>
+            <div class="caseblanc col-12 col-md-5 ms-4 " >
+              <h4 class="ANA2" >Analyse Negatives</p>
+                <div class=" ana4 text-center">
+                  <div class="cla12"><i class="bi bi-droplet-fill"></i></div>
+                  <h5 class="po"> Negative</h5>
+                  <div>
+                    <canvas id="myChart2"></canvas>
+                    <span id="tu" class="re">
+                      <h3 class="PO">9%</h3>
+                    </span>
+                  </div>
+                  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                  <script>
+                    const ftx = document.getElementById('myChart2');
+                    new Chart(ftx, {
+                      type: 'doughnut',
+                      data: {
+                        datasets: [{
+                          label2: '# of votes',
+                          data: [9, 91,],
+                          backgroundColor: [
+                            '#4A96A6',
+                            '#E7F9FD'
+                          ],
+                          borderColor: [
+                            '#4A96A6',
+                            '#E7F9FD',
+                          ],
+                           borderWidth: 1,
+                          borderRaduis: 4,
+                        }]
+                      },
+                      options: {
+                        circumference: 260,
+                        rotation: 230,
+                        cutout: "83%",
+                        aspectRatio: 2,
+                        Plugin: {
+                          legend: {
+                          }
+                        }
+                      }
+                    })
+                  </script>
+                </div>
+            </div>
+          </div>
+          </div>
+          <!-- chart en bar -->
+
+          <div class="mo" >
+            <h1>analyse par mois</h1>
+            <div>
+              <canvas id="myChart"></canvas>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+            <script>
+              const ctx = document.getElementById('myChart');
+              new Chart(ctx, {
+                type: 'bar',
+                data: {
+                  labels: ['JAN', 'FEV', 'MARS', 'AVRIL', 'MAI', 'JUIN', 'JUL', 'Aout', 'SEPT', 'OCT', 'NOV', 'DEC'],
+                  datasets: [{
+                    label: '# of Votes',
+                    data: [11, 8, 16, 7, 11, 5, 9, 11, 11, 11, 11, 11],
+                    inflateAmount: 1,
+                    backgroundColor:'white',
+                    hoverBackgroundColor: 'rgb(85,159,177)',
+                  }]
+                },
+                options: {
+                  scales: {
+                    y: {
+                      display: false,
+
+                    },
+
+                  }
+
+                }
+              });
+            </script>
+          </div>
+
+        </div>
+
+
+        <!-- contenu -->
+      </div>
+
+
+    </div>
+
+
+
+  </div>
+
+
+
+  <!-- </div>
+  </div>
+
+  </div>
+
+  </div> -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
